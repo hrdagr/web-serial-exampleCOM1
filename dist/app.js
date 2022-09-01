@@ -51,15 +51,9 @@ var WebSerialDemoApp = /** @class */ (function () {
         this.serialMessagesContainer = document.getElementById('serial-messages-container');
         this.connectButtonElem.addEventListener('pointerdown', function () { return __awaiter(_this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, serialHandler.init()];
-                    case 1:
-                        _a.sent();
-                        this.messageButtons.forEach(function (button) {
-                            button.removeAttribute('disabled');
-                        });
-                        return [2 /*return*/];
-                }
+                
+                     return [4 /*yield*/, serialHandler.init()];
+                    
             });
         }); });
         this.messageButtons.forEach(function (button) {
